@@ -554,8 +554,7 @@ function CreateOrRecoverUsernameScreen({
   const { onboardingData, setOnboardingData } = useOnboarding();
   const { action } = onboardingData; // create | recover
 
-  const screenTitle =
-    action === "create" ? "Claim your username" : "Username recovery";
+  const screenTitle = action === "create" ? "" : "Username recovery";
 
   const onSubmit = async ({ username }: UsernameData) => {
     clearErrors("username");
